@@ -1,0 +1,5 @@
+Package: InstallCodesysBootApplication
+Version: 1.0
+Architecture: all
+Maintainer: Diederick Nab <diederick.nab@wago.com>
+Description: Install CODESYS boot application

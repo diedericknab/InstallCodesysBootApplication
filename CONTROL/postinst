@@ -1,0 +1,5 @@
+#!/bin/bash
+echo 0 > /sys/class/leds/pca955x\:usr-green/brightness
+/etc/init.d/runtime stop 2> /dev/null
+/etc/init.d/runtime start 2> /dev/null
+echo 255 > /sys/class/leds/pca955x\:usr-green/brightness
