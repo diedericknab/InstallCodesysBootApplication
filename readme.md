@@ -135,12 +135,4 @@ fi
 | Adjust installation options | Modify the `opkg` command parameters. |
 
 ---
-
-## **4. Summary**
-This script:
-1. **Creates an IPK package** with necessary metadata and application files.
-2. **Uploads the IPK to a remote WAGO PLC** via `scp`.
-3. **Installs the IPK package** on the PLC using `opkg`.
-4. **Uses prompts for user confirmation**, allowing manual control over execution.
-
-With these explanations, you can **easily modify the script** to fit your specific WAGO PLC deployment needs. 🚀
+Credits: Diederick Nab
