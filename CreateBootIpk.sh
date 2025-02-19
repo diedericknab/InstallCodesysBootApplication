@@ -46,8 +46,8 @@ read -r response
 response=$(echo "$response" | tr '[:upper:]' '[:lower:]')
 
 if [[ "$response" == "yes" || "$response" == "y" ]]; then
-    scp InstallCodesysBootApplication.ipk root@192.168.178.105:/tmp
-    rm InstallCodesysBootApplication.ipk
+    scp $IPK_FILE ${REMOTE_USER}@${REMOTE_HOST}:/tmp
+    rm $IPK_FILE
     echo "IPK file uploaded to controller."
 
     echo "Do you want to start the ipk installation on the controller? (yes/no)"
